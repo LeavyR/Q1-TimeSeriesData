@@ -2,9 +2,10 @@
 function FBaseJSonDeal(FData, FFuncOK, FFuncErr, FShowMsg, FSync) {
     if (FSync == undefined)
         FSync = true;
+    if (FShowMsg == undefined)
+        FShowMsg = true;
 
     if (FShowMsg)
-
 
         $.ajax({
             type: "POST",
@@ -13,28 +14,18 @@ function FBaseJSonDeal(FData, FFuncOK, FFuncErr, FShowMsg, FSync) {
             data: FData,
             async: FSync,
             error: function () {
-                alert("err");
+               
 
             },
             success: function (data) {
 
                 var str = "var obj=" + data;
 
-                eval(str);
-                if (obj.success)
-                    if (FFuncOK != null)
-                        FFuncOK(obj);
+                //eval(str);
+                //if (obj.success)
+                if (FFuncOK != null)
+                    FFuncOK(data);
 
-                if (!obj.success) {
-
-                    if (obj.errcode == 1)
-                        PubUserLogin();
-                    else {
-
-                    }
-
-                    if (FFuncErr != null) FFuncErr(obj);
-                }
             }
         });
 }

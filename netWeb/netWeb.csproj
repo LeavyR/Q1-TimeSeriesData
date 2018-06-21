@@ -175,15 +175,15 @@
     <Content Include="amcharts\radar.js" />
     <Content Include="amcharts\serial.js" />
     <Content Include="amcharts\xy.js" />
-    <Content Include="css\bootstrap.css" />
-    <Content Include="css\default.css" />
-    <Content Include="css\style.css" />
     <Content Include="data\MarkPoints.txt" />
+    <Content Include="default.html" />
     <Content Include="framePublic\pubJSONAjax.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="js\pubAjax.js" />
+    <Content Include="style.css" />
+    <Content Include="test.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -215,6 +215,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="css\" />
     <Folder Include="img\" />
   </ItemGroup>
   <PropertyGroup>

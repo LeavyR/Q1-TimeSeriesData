@@ -64,10 +64,10 @@ namespace netWeb
                 }
             }
             //将数据按照时间排序
-            if (aryLine != null && aryLine.Length > 0)
-            {
-                dt.DefaultView.Sort = tableHead[0] + " " + "asc";
-            }
+            //if (aryLine != null && aryLine.Length > 0)
+            //{
+            //    dt.DefaultView.Sort = tableHead[0] + " " + "desc";
+            //}
 
             sr.Close();
             fs.Close();
